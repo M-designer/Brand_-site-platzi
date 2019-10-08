@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+
+/*---------------------------------------------------------------- Variables*/
+:root{
+    --green-color: #7acc2d;
+    --white-color: white;
+    --black-color: #313337;
+    --grey-color: #cacaca3d;
+    --greydark-color: #313337;
+
+    /* Tipografia*/
+    --normal: 12px;
+    --n-17: 17px;
+
+    /* Espaciado*/
+    --space: 10px;
+    --p-10p-20: 10% 20%; 
+    --p-10: 10%; 
+
+    /* Box Shadow */
+    --box: 0 0 1px #e6e5e9;
+
+}
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: var(--green-color);
+    padding: var(--space);
+    color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li{
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a{
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--white-color);
+}
+
+/* ------------------------------------------------------------- main section*/
+
+.main_section{
+    padding: 10%;
+    text-align: center;
+}
+
+.products{
+    background-image: url(../Img/curve.png);
+    height: 0px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -336px;
+}
+
+.product .content{
+    background-color:  var(--white-color);
+    padding: 15px;
+    box-shadow: var(--box);
+}
+.img_content{
+    text-align: center;
+}
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--n-17);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
+    border-radius: 2px;
+}
+
+/* --------------------------------------------------------------- beneficios */
+
+.Benefits{
+    background-color: var(--white-color);
+    padding: var(--p-10p-20);
+    display: flex;
+}
+
+.beneficio{
+    padding: 20%;
+    text-align: center;
+}
+.beneficio .content{
+    padding: 15px;
+}
+
+.img_content  img{
+    width: 100%;
+    max-width: 138px;
+    height: auto;
+}
+
+/* ------------------------------------------------------------------ Mentions */
+
+.mentions{
+    text-align: center;
+    border-top: var(--grey-color) solid 1px;
+    padding: 5%;
+}
+
+.mentions h2{
+    font-size: 30px;
+}
+.contain_mentions{
+    background-color: var(--white-color);
+    padding:  0 20%;
+    display: flex;
+}
+
+.mention{
+    margin-left: 15px;
+    box-shadow: 0 0 10px #e6e5e9;
+}
+
+.mention .content{
+    padding: var(--space);
+}
+
+.img_mention  img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*---------------------------------------------------------------Venta */
+
+.modulo-pago{
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    padding: var(--p-10);
+}
+
+
+.data{
+    margin: var(--space) 0; 
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid var(--black-color);
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+.main_btn{
+    background-color: var(--green-color) ;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--white-color)
+}
+
+
+/*  ------------------------------------------------------------- Footer  */
+
+footer{
+    background-color: var(--greydark-color);
+    display: flex;
+    padding: var(--space);
+    justify-content: space-between;
+}
+
+footer a{
+    color: var(--white-color);
+    text-decoration: none;
+}
